@@ -70,4 +70,4 @@ echo_message "* Skyport Installed and Started on Port 3001"
 
 # Clear the screen after finishing
 clear
-echo "* Made by Jishnu"
+echo "* Made by Samanyu"

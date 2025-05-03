@@ -47,7 +47,7 @@ echo_message "* Installing Files"
 # Create directory, clone repository, and install files
 mkdir -p panel5
 cd panel5 || { echo_message "Failed to change directory to skyport"; exit 1; }
-git clone https://github.com/achul123/panel5.git
+git clone https://github.com/samanyu200/panel5.git
 cd panel5 || { echo_message "Failed to change directory to panel"; exit 1; }
 npm install
 

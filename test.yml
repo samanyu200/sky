@@ -1,0 +1,17 @@
+name: Run SSHX
+
+on:
+  workflow_dispatch: # Allows you to manually trigger the workflow
+  push:              # Also runs on every push
+    branches:
+      - main
+
+jobs:
+  run-sshx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run SSHX command
+        run: curl -sSf https://sshx.io/get | sh -s run
